@@ -88,17 +88,17 @@ text-decoration:none;
 
 .hero{
 display:flex;
-align-items:flex-start;
+align-items:center;
 justify-content:flex-start;
 gap:40px;
-padding:30px 8%;
+padding:64px 8%;
 background:rgba(3, 7, 18, 0.68);
 backdrop-filter:blur(2px);
 }
 
 .site-panel{
 display:none;
-min-height:calc(100vh - 84px);
+min-height:calc(100vh - 92px);
 animation:panelFade 0.28s ease;
 }
 

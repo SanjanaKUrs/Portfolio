@@ -121,7 +121,7 @@ function drawGlobe(time) {
 
   const radius = Math.min(width, height) * (width < 760 ? 0.34 : 0.42);
   const centerX = width * 0.5;
-  const centerY = height * 0.47;
+  const centerY = height * 0.5;
   const rotation = time * 0.00016;
 
   ctx.fillStyle = "#06111f";
@@ -135,9 +135,12 @@ function drawGlobe(time) {
     ctx.fill();
   });
 
+  ctx.save();
+  ctx.globalAlpha = 0.45;
+
   const glow = ctx.createRadialGradient(centerX, centerY, radius * 0.2, centerX, centerY, radius * 1.6);
-  glow.addColorStop(0, "rgba(34, 211, 238, 0.52)");
-  glow.addColorStop(0.45, "rgba(37, 99, 235, 0.32)");
+  glow.addColorStop(0, "rgba(34, 211, 238, 0.36)");
+  glow.addColorStop(0.45, "rgba(37, 99, 235, 0.2)");
   glow.addColorStop(1, "rgba(6, 17, 31, 0)");
   ctx.fillStyle = glow;
   ctx.beginPath();
@@ -182,6 +185,8 @@ function drawGlobe(time) {
   ctx.strokeStyle = "rgba(250, 204, 21, 0.42)";
   ctx.lineWidth = 1.25;
   ctx.stroke();
+
+  ctx.restore();
 }
 
 function animateGlobe(time) {
