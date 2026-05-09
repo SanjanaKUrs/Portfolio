@@ -1,6 +1,27 @@
 const panels = document.querySelectorAll(".site-panel");
 const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
 
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+function scrollPageTop(behavior) {
+  const scroll = () => {
+    window.scrollTo({ top: 0, left: 0, behavior });
+  };
+
+  scroll();
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      scroll();
+    });
+  });
+
+  window.setTimeout(scroll, 50);
+  window.setTimeout(scroll, 150);
+}
+
 function showPanel(panelId, updateHash = true, scrollToTop = true) {
   const targetPanel = document.getElementById(panelId);
 
@@ -21,7 +42,7 @@ function showPanel(panelId, updateHash = true, scrollToTop = true) {
   }
 
   if (scrollToTop) {
-    window.scrollTo({ top: 0, behavior: updateHash ? "smooth" : "auto" });
+    scrollPageTop(updateHash ? "smooth" : "auto");
   }
 }
 
@@ -37,6 +58,10 @@ window.addEventListener("popstate", () => {
 });
 
 showPanel(window.location.hash.slice(1) || "about", false);
+
+window.addEventListener("load", () => {
+  showPanel(window.location.hash.slice(1) || "about", false);
+});
 
 const cards = document.querySelectorAll(".project-card");
 
