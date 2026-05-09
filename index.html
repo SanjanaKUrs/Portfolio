@@ -12,6 +12,8 @@
 
 <body>
 
+<canvas id="globe-bg" aria-hidden="true"></canvas>
+
 <!-- NAVBAR -->
 
 <header>
@@ -38,7 +40,7 @@ Sanjana Kiran Urs
 
 <!-- HERO SPLIT SECTION -->
 
-<section class="hero" id="about">
+<section class="hero site-panel active" id="about">
 
 <div class="hero-image">
 <img src="assets/profile_caricature.png" alt="Sanjana profile">
@@ -60,7 +62,7 @@ If you're interested in AI, software engineering, or building products that peop
 
 <!-- EXPERIENCE -->
 
-<section id="experience" class="section dark">
+<section id="experience" class="section dark site-panel">
 
 <h2 class="section-title">Experience</h2>
 
@@ -69,21 +71,25 @@ If you're interested in AI, software engineering, or building products that peop
 <div class="timeline-item">
 
 <div class="timeline-content">
-    <h3>Visiting Graduate Student &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp July 2025 – August 2025</h3>
+    <h3 class="role-line">
+    <span>Visiting Graduate Student</span>
+    <span>July 2025 - August 2025</span>
+    </h3>
     
-    <p class="company">
-    <h4>Cedars Sinai Medical Center - Slomka Lab</h4>
-    </p>
+    <h4 class="company">Cedars Sinai Medical Center - Slomka Lab</h4>
 
     <p class="location">
     Los Angeles, CA
     </p>
     
-    <p>
-    Developed and maintained web applications using Python and Django.
-    </p>
+    <ul>
+    <li>Developed an interpretable XGBoost model for diagnosing coronary artery disease using quantitative PET-derived biomarkers.</li>
+    <li>Conducted cross-validation using the LOSO method across 10 clinical sites, while reserving one site for external validation.</li>
+    <li>Performed hyperparameter tuning using grid search and contributed to the integration and standardization of cardiac PET/CT imaging biomarkers from multiple institutions.</li>
+    <li>Implemented quality-control pipelines and harmonization protocols to support reproducibility and streamline data ingestion.</li>
+    </ul>
 
-    <span>Tools: XGBoost | Python | Pandas | Numpy | LOSO </span>
+    <span>Tools: XGBoost | Python | Pandas | NumPy | LOSO </span>
 </div>
 
 </div>
@@ -95,7 +101,7 @@ If you're interested in AI, software engineering, or building products that peop
 
 <!-- PROJECTS SECTION -->
 
-<section id="projects" class="section">
+<section id="projects" class="section site-panel">
 
 <h2 class="section-title">Featured Projects</h2>
 
@@ -326,7 +332,7 @@ If you're interested in AI, software engineering, or building products that peop
 
 <!-- SKILLS -->
 
-<section id="skills" class="skills-section">
+<section id="skills" class="skills-section site-panel">
 
 <h2 class="skills-title">Skills</h2>
 
@@ -341,6 +347,7 @@ If you're interested in AI, software engineering, or building products that peop
 <span>CSS</span>
 <span>SQL</span>
 <span>R</span>
+<span>OOP in C++</span>
 </div>
 </div>
 
@@ -401,7 +408,7 @@ If you're interested in AI, software engineering, or building products that peop
 
 <!-- EDUCATION -->
 
-<section id="education" class="education-section">
+<section id="education" class="education-section site-panel">
 
 <h2 class="education-title">Education</h2>
 
@@ -452,7 +459,7 @@ Data Structures, Statistics, Engineering Mathematics-I, II, III, IV
 
 <!-- CONTACT -->
 
-<section id="contact" class="section dark">
+<section id="contact" class="section dark site-panel">
 
 <h2>Contact</h2>
 
