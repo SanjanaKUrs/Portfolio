@@ -1,0 +1,435 @@
+body{
+font-family: 'Inter', sans-serif;
+margin:0;
+color:#222;
+}
+
+/* NAVBAR */
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0b1d3a;   /* dark blue */
+color:white;
+}
+
+.logo{
+font-weight:700;
+font-size:20px;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#fff9f9;
+font-weight:500;
+}
+
+.resume-btn{
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:flex-start;
+justify-content:flex-start;
+gap:40px;
+padding:30px 8%;
+background:linear-gradient(to right,#f8fafc,#ffffff,#f8fafc);
+}
+
+.hero-left{
+flex:1;
+text-align:right;
+}
+
+.hero-right{
+flex:1;
+}
+
+/* HERO TEXT */
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h2{
+font-size:24px;
+font-weight:700;
+color:#13294b;
+margin-bottom:16px;
+}
+
+.hero-text p{
+font-size:16px;
+color:#475569;
+line-height:1.8;
+}
+
+.hero-image{
+flex:0 0 auto;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:0 0 80px 0;
+}
+
+.hero-image img{
+width:520px;
+max-width:120%;
+
+/* fade edges */
+ -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+
+  mask-image:
+    linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 10%;
+transform: translateY(-80px);
+}
+
+.section.dark{
+background:#0b1d3a;
+color:white;
+}
+
+
+/* EXPERIENCE SECTION */
+
+#experience{
+padding:30px 10%;
+background:#0b1d3a;   /* same dark blue theme */
+color:white;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+font-size:36px;
+font-weight:700;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* TIMELINE CONTAINER */
+
+.timeline{
+max-width:900px;
+margin:auto;
+}
+
+/* EXPERIENCE CARD */
+
+.timeline-item{
+background:#13294b;
+padding:30px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+margin-bottom:40px;
+transition:transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.timeline-item:hover{
+transform:translateY(-5px);
+}
+
+/* JOB TITLE */
+
+.timeline-content h3{
+font-size:22px;
+margin-bottom:10px;
+font-weight:600;
+}
+
+/* COMPANY */
+
+.company{
+font-size:16px;
+color:#60a5fa;
+margin-bottom:5px;
+}
+
+/* LOCATION */
+
+.location{
+font-size:14px;
+color:#cbd5e1;
+margin-bottom:15px;
+}
+
+/* DESCRIPTION */
+
+.timeline-content p{
+line-height:1.6;
+margin-bottom:15px;
+}
+
+/* TOOLS TAG */
+
+.timeline-content span{
+display:inline-block;
+padding:8px 14px;
+background:#cbd5e1;
+border-radius:6px;
+font-size:14px;
+color:#13294b;
+}
+
+
+
+/* PROJECTS SECTION */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:30px;
+margin-top:10px;
+border-top:0px solid #d1d5db;
+border-left:0px solid #d1d5db;
+}
+
+
+/* PROJECT CARD */
+
+.project-card{
+background:#cbd5e1;
+padding:30px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+transition:0.3s ease;
+}
+
+
+/* Hover Effect */
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+/* TITLE */
+
+.project-card h3{
+color:#1e3a8a;
+font-size:20px;
+margin-bottom:12px;
+font-weight:600;
+}
+
+.project-card ul{
+color:#475569;
+font-size:14px;
+line-height:1.7;
+margin-bottom:15px;
+padding-left:18px;
+}
+
+.project-card li{
+margin-bottom:4px;
+}
+
+/* TOOLS */
+
+.project-card span{
+color:#111827;
+font-weight:600;
+}
+
+/* LINK */
+
+.project-card a{
+display:inline-block;
+margin-top:10px;
+color:#1e3a8a;
+font-weight:700;
+text-decoration:none;
+}
+
+.project-card a:hover{
+text-decoration:underline;
+}
+
+
+/* SKILLS SECTION */
+
+.skills-section{
+background:#0b1d3a; 
+color:white;
+padding:80px 10%;
+}
+
+.skills-title{
+font-size:36px;
+font-weight:700;
+color:white;
+margin-bottom:30px;
+}
+
+/* GRID LAYOUT */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:30px 40px;
+}
+
+/* SKILL CARD */
+
+.skill-card{
+border-left:4px solid #e5e7eb;
+padding-left:16px;
+}
+
+/* CARD TITLE */
+
+.skill-card h3{
+color:#648dfd;
+margin-bottom:12px;
+font-size:20px;
+}
+
+/* SKILL TAGS */
+
+.skill-tags{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill-tags span{
+background:#cbd5e1;
+color:#13294b;
+padding:6px 12px;
+border-radius:6px;
+font-size:14px;
+}
+
+/* EDUCATION SECTION */
+
+.education-section{
+background:white;
+padding:80px 10%;
+}
+
+.education-title{
+font-size:28px;
+font-weight:700;
+color:#13294b;
+margin-bottom:40px;
+letter-spacing:1px;
+}
+
+/* EDUCATION ITEM LAYOUT */
+
+.education-item{
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid #e5e7eb;
+padding-bottom:30px;
+margin-bottom:30px;
+gap:40px;
+}
+
+/* LEFT CONTENT */
+
+.edu-left h3{
+color:#1e3a8a;
+font-size:20px;
+margin-bottom:6px;
+}
+
+.degree{
+font-style:italic;
+color:#60a5fa;
+margin-bottom:8px;
+}
+
+.coursework{
+color:#475569;
+line-height:1.6;
+}
+
+/* RIGHT SIDE */
+
+.edu-right{
+text-align:right;
+color:#1e3a8a;
+min-width:220px;
+}
+
+.gpa{
+color:#60a5fa;
+font-weight:600;
+margin-top:6px;
+}
+
+
+/* PROJECT CARD NUMBER + CATEGORY */
+
+.project-card .card-number{
+font-size:12px;
+color:#9ca3af;
+margin-bottom:8px;
+display:block;
+}
+
+.project-card .card-category{
+font-size:11px;
+font-weight:700;
+letter-spacing:0.08em;
+color:#1e3a8a;
+text-transform:uppercase;
+margin-bottom:10px;
+display:block;
+}
+
+.project-card span.tools{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:12px;
+}
+
+.project-card span.tools span{
+background:white;
+border:1px solid #d1d5db;
+color:#374151;
+padding:4px 10px;
+border-radius:4px;
+font-size:12px;
+font-weight:500;
+}
+
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#f3f4f6;
+}

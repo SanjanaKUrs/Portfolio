@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjana Kiran Urs | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+<nav class="nav">
+
+<div class="logo">
+Sanjana Kiran Urs
+</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<a class="resume-btn" href="assets/Sanjana_Kiran_Urs-Resume.pdf" target="_blank">Resume</a>
+
+</nav>
+</header>
+
+
+<!-- HERO SPLIT SECTION -->
+
+<section class="hero" id="about">
+
+<div class="hero-image">
+<img src="assets/profile_caricature.png" alt="Sanjana profile">
+</div>
+
+<div class="hero-text">
+<h2>A little introduction about me</h2>
+<p>
+I am a Computer Science graduate specializing in Artificial Intelligence
+and Data Analytics.
+
+I enjoy building machine learning models, analyzing complex datasets,
+and creating data-driven solutions for real-world problems.
+</p>
+</div>
+
+</section>
+
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section dark">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-content">
+    <h3>Visiting Graduate Student &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp July 2025 – August 2025</h3>
+    
+    <p class="company">
+    <h4>Cedars Sinai Medical Center - Slomka Lab</h4>
+    </p>
+
+    <p class="location">
+    Los Angeles, CA
+    </p>
+    
+    <p>
+    Developed and maintained web applications using Python and Django.
+    </p>
+
+    <span>Tools: XGBoost | Python | Pandas | Numpy | LOSO </span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects" class="section">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="projects-grid">
+
+<!-- 1 -->
+<div class="project-card">
+<span class="card-number">01</span>
+<span class="card-category">NLP</span>
+<h3>Emotion Detection in Social Media Posts using Sentiment Analysis</h3>
+
+<ul>
+<li>Built a Transformer-based emotion classification model using GoEmotions dataset for multi-label sentiment analysis.</li>
+<li>Engineered text preprocessing pipeline including cleaning, WordPiece tokenization, and class imbalance handling using class weighting.</li>
+<li>Designed and compared RoBERTa, RoBERTa+CNN+NRC lexicon, and DeBERTa architectures to improve generalization and robustness.</li>
+<li>Achieved up to 85% accuracy and improved test loss from 0.68 → 0.11 with enhanced hybrid model.</li>
+<li>Evaluated using F1-score, ROC-AUC, and confusion matrix; deployed interactive Gradio demo for real-time inference.</li>
+</ul>
+
+<span> Pandas | PyTorch | Transformers | NLP | Gradio | LLM </span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 2 -->
+<div class="project-card">
+<span class="card-number">02</span>
+<span class="card-category">NLP</span>
+<h3>Multilingual Region-Aware Sentiment Analysis</h3>
+
+<ul>
+<li>Built multilingual sentiment classifier using 6-language Amazon reviews dataset with region-aware modeling.</li>
+<li>Compared baseline mBERT vs adapter-augmented mBERT with MC Dropout for uncertainty estimation.</li>
+<li>Improved generalization with lightweight adapters, reducing overfitting and improving cross-language robustness.</li>
+<li>Achieved AUC 0.92 and >83% accuracy with stable validation performance.</li>
+<li>Deployed interactive Gradio interface with multilingual predictions, charts, and sentiment visualization.</li>
+</ul>
+
+<span> PyTorch | HuggingFace | Transformers | Gradio</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 3 -->
+<div class="project-card">
+<span class="card-number">03</span>
+<span class="card-category">Computer Vision</span>
+<h3>Vision Transformer Cats vs Dogs Classifier</h3>
+
+<ul>
+<li>Fine-tuned pre-trained Vision Transformer (ViT) for binary image classification.</li>
+<li>Applied augmentation, mixed precision training, and cosine annealing scheduler for optimization.</li>
+<li>Improved model robustness using transfer learning and regularization techniques.</li>
+<li>Achieved 92.7% test accuracy on benchmark dataset.</li>
+<li>Deployed model using Gradio for real-time image classification interface.</li>
+</ul>
+
+<span> PyTorch | ViT | HuggingFace | Gradio</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 4 -->
+<div class="project-card">
+<span class="card-number">04</span>
+<span class="card-category">Computer Vision</span>
+<h3>VGG vs ResNet Image Classification</h3>
+
+<ul>
+<li>Implemented and compared VGG-16 and ResNet-18 architectures on 30,000 image dataset.</li>
+<li>Applied preprocessing techniques including normalization, augmentation, and class balancing.</li>
+<li>Optimized performance using SGD, Adam, AdamW with hyperparameter tuning.</li>
+<li>Reduced overfitting using dropout and early stopping techniques.</li>
+<li>Achieved >85% classification accuracy across models.</li>
+</ul>
+
+<span>PyTorch | TensorFlow | CNN | Scikit-learn</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 5 -->
+<div class="project-card">
+<span class="card-number">05</span>
+<span class="card-category">Deep Learning</span>
+<h3>Time-Series Forecasting using LSTM</h3>
+
+<ul>
+<li>Developed RNN/LSTM-based forecasting model for air quality prediction.</li>
+<li>Performed sequence generation, scaling, and time-series preprocessing.</li>
+<li>Optimized model using hyperparameter tuning and early stopping.</li>
+<li>Achieved 94.95% predictive accuracy on test data.</li>
+</ul>
+
+<span>PyTorch | LSTM | Time Series</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 6 -->
+<div class="project-card">
+<span class="card-number">06</span>
+<span class="card-category">Deep Learning</span>
+<h3>Handwritten Digit Classification</h3>
+
+<ul>
+<li>Built a multilayer neural network from scratch for MNIST digit classification.</li>
+<li>Implemented forward/backpropagation without deep learning libraries.</li>
+<li>Applied normalization and feature optimization techniques.</li>
+<li>Improved performance using regularization and hyperparameter tuning.</li>
+<li>Achieved 95.7% test accuracy.</li>
+</ul>
+
+<span>Python | NumPy | Neural Networks</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 7 -->
+<div class="project-card">
+<span class="card-number">07</span>
+<span class="card-category">Machine Learning</span>
+<h3>Identification and Classification of adherence in Cardiovascular Disease (CVD) patients using AI techniques </h3>
+
+<ul>
+<li>Developed mobile application for collecting patient health data using Flutter.</li>
+<li>Trained ML models including ANN, SVM, Random Forest for disease prediction.</li>
+<li>Integrated backend with MySQL database for real-time storage and retrieval.</li>
+<li>Achieved 88.75% classification accuracy using ANN model.</li>
+</ul>
+
+<span>Python | Flutter | MySQL | JS | Dart</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 8 -->
+<div class="project-card">
+<span class="card-number">08</span>
+<span class="card-category">Machine Learning</span>
+<h3>Airbnb Price Prediction</h3>
+
+<ul>
+<li>Performed EDA, missing value imputation, and feature engineering on Airbnb dataset.</li>
+<li>Compared regression models including Linear Regression, RF, GBM, XGBoost.</li>
+<li>Identified XGBoost as best performing model for price prediction.</li>
+</ul>
+
+<span>Python | NumPy | Pandas</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 9 -->
+<div class="project-card">
+<span class="card-number">9</span>
+<span class="card-category">Deep Learning</span>
+<h3>CNN-based OCTMNIST Retinal OCT Image Classifier</h3>
+
+<ul>
+<li>Built CNN model for medical OCT image classification (4 classes).</li>
+<li>Handled class imbalance using focal loss and augmentation.</li>
+<li>Improved performance using batch normalization, LR scheduling, and gradient accumulation.</li>
+<li>Achieved 91.98% test accuracy.</li>
+</ul>
+
+<span>PyTorch | CNN | Matplotlib |Scikit-learn</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 10 -->
+<div class="project-card">
+<span class="card-number">10</span>
+<span class="card-category">Machine Learning</span>
+<h3>Breast Cancer Detection</h3>
+
+<ul>
+<li>Performed data preprocessing including normalization and feature reduction.</li>
+<li>Compared ML models including Logistic Regression, RF, KNN, Decision Trees.</li>
+<li>Built classification system for tumor detection.</li>
+</ul>
+
+<span>Python | Pandas | NumPy</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 11 -->
+<div class="project-card">
+<span class="card-number">11</span>
+<span class="card-category">Data Analytics</span>
+<h3>University Shop Management System</h3>
+
+<ul>
+<li>Designed normalized PostgreSQL database with proper schema and constraints.</li>
+<li>Implemented triggers, stored procedures, and advanced SQL queries.</li>
+<li>Optimized query performance using indexing and restructuring techniques.</li>
+<li>Reduced execution time up to 10× for analytics queries.</li>
+</ul>
+
+<span>SQL | PostgreSQL | Python | NumPy | Pandas</span>
+<a href="#">GitHub</a>
+</div>
+
+
+<!-- 12 -->
+<div class="project-card">
+<span class="card-number">12</span>
+<span class="card-category">Data Analytics</span>
+<h3>Cricket Performance Analytics using Tableau</h3>
+
+<ul>
+<li>Built interactive Tableau dashboards for ODI, T20, and Test match analysis.</li>
+<li>Performed data cleaning, merging, and preprocessing before visualization.</li>
+<li>Generated insights using player and team performance metrics.</li>
+</ul>
+
+<span>Tableau | Pandas | NumPy | Data Visualization</span>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="skills-section">
+
+<h2 class="skills-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Languages</h3>
+<div class="skill-tags">
+<span>Python</span>
+<span>C</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>SQL</span>
+<span>R</span>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>Libraries</h3>
+<div class="skill-tags">
+<span>NumPy</span>
+<span>Pandas</span>
+<span>Scikit-learn</span>
+<span>Matplotlib</span>
+<span>PyTorch</span>
+<span>TensorFlow</span>
+<span>OpenCV</span>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>Tools & Frameworks</h3>
+<div class="skill-tags">
+<span>MySQL</span>
+<span>PostgreSQL</span>
+<span>Tableau</span>
+<span>Spark</span>
+<span>Hadoop</span>
+<span>Linux</span>
+<span>Git</span>
+<span>Docker</span>
+<span>AWS</span>
+<span>Power BI</span>
+<span>Jira</span>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>Soft Skills</h3>
+<div class="skill-tags">
+<span>Problem Solving</span>
+<span>Communication</span>
+<span>Collaboration</span>
+<span>Analytical Thinking</span>
+<span>Decision Making</span>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>LLMs & GenAI</h3>
+<div class="skill-tags">
+<span>RAG</span>
+<span>Transformers</span>
+<span>Prompt Engineering</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education" class="education-section">
+
+<h2 class="education-title">Education</h2>
+
+<div class="education">
+
+<div class="education-item">
+
+<div class="edu-left">
+<h3>University at Buffalo, Buffalo, New York</h3>
+<p class="degree">Master of Science in Computer & Information Science</p>
+<p class="coursework">
+<b>Coursework:</b>  Computer Vision and Image Processing, Statistical Data Mining II,
+Deep Learning, Data Models Query Language, Intro to Pattern Recognition,
+Operating Systems, Machine Learning, Algorithms, Data Intensive Computing,
+Computer Security
+</p>
+</div>
+
+<div class="edu-right">
+<p>August 2024 - December 2025</p>
+<p class="gpa">GPA: 3.70/4</p>
+</div>
+</div>
+
+
+<div class="education-item">
+
+<div class="edu-left">
+<h3>JSS Science and Technology University, Mysore, India</h3>
+<p class="degree">Bachelor of Engineering in Information Science</p>
+<p class="coursework">
+<b>Coursework:</b> Artificial Intelligence, Data Mining, Database Management System,
+Object Oriented Programming in C++, Software Engineering, Linear Algebra,
+Data Structures, Statistics, Engineering Mathematics-I, II, III, IV
+</p>
+</div>
+
+<div class="edu-right">
+<p>August 2019 - July 2023</p>
+<p class="gpa">GPA: 3.87/4</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section dark">
+
+<h2>Contact</h2>
+
+<p>Email: sanjanaursk@gmail.com</p>
+
+<p>
+<a href="https://github.com/SanjanaKUrs">GitHub</a> |
+<a href="https://www.linkedin.com/in/sanjanakiranurs/">LinkedIn</a>
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Sanjana Kiran Urs</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
